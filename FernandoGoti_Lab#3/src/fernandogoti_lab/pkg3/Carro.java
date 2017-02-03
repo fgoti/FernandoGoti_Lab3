@@ -26,10 +26,10 @@ public class Carro {
     public Carro() {
     }
 
-    public Carro(double Numero_Serie, Date Fecha_Ensamblado, Color Pdoubleura, String Marca_llanta, String Polarizado, double Velocidad_Max, double Galones, double Precio) {
+    public Carro(double Numero_Serie, Date Fecha_Ensamblado, Color color, String Marca_llanta, String Polarizado, double Velocidad_Max, double Galones, double Precio) {
         this.Numero_Serie = Numero_Serie;
         this.Fecha_Ensamblado = Fecha_Ensamblado;
-        this.color = Pdoubleura;
+        this.color = color;
         this.Marca_llanta = Marca_llanta;
         this.Polarizado = Polarizado;
         this.Velocidad_Max = Velocidad_Max;
@@ -53,12 +53,12 @@ public class Carro {
         this.Fecha_Ensamblado = Fecha_Ensamblado;
     }
 
-    public Color getPdoubleura() {
+    public Color getColor() {
         return color;
     }
 
-    public void setPdoubleura(Color Pdoubleura) {
-        this.color = Pdoubleura;
+    public void setColor(Color color) {
+        this.color = color;
     }
 
     public String getMarca_llanta() {
@@ -103,7 +103,7 @@ public class Carro {
 
     @Override
     public String toString() {
-        return "Carro{" + "Numero_Serie=" + Numero_Serie + ", Fecha_Ensamblado=" + Fecha_Ensamblado + ", Pdoubleura=" + color + ", Marca_llanta=" + Marca_llanta + ", Polarizado=" + Polarizado + ", Velocidad_Max=" + Velocidad_Max + ", Galones=" + Galones + ", Precio=" + Precio + '}';
+        return "Carro{" + "Numero_Serie=" + Numero_Serie + ", Fecha_Ensamblado=" + Fecha_Ensamblado + ", Color=" + color + ", Marca_llanta=" + Marca_llanta + ", Polarizado=" + Polarizado + ", Velocidad_Max=" + Velocidad_Max + ", Galones=" + Galones + ", Precio=" + Precio + '}';
     }
 
 }
