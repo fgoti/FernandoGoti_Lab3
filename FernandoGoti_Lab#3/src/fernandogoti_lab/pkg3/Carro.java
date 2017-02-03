@@ -14,22 +14,22 @@ import java.util.Date;
  */
 public class Carro {
 
-    private int Numero_Serie;
+    private double Numero_Serie;
     private Date Fecha_Ensamblado;
-    private Color Pintura;
+    private Color color;
     private String Marca_llanta;
     private String Polarizado;
-    private int Velocidad_Max;
-    private int Galones;
-    private int Precio;
+    private double Velocidad_Max;
+    private double Galones;
+    private double Precio;
 
     public Carro() {
     }
 
-    public Carro(int Numero_Serie, Date Fecha_Ensamblado, Color Pintura, String Marca_llanta, String Polarizado, int Velocidad_Max, int Galones, int Precio) {
+    public Carro(double Numero_Serie, Date Fecha_Ensamblado, Color Pdoubleura, String Marca_llanta, String Polarizado, double Velocidad_Max, double Galones, double Precio) {
         this.Numero_Serie = Numero_Serie;
         this.Fecha_Ensamblado = Fecha_Ensamblado;
-        this.Pintura = Pintura;
+        this.color = Pdoubleura;
         this.Marca_llanta = Marca_llanta;
         this.Polarizado = Polarizado;
         this.Velocidad_Max = Velocidad_Max;
@@ -37,11 +37,11 @@ public class Carro {
         this.Precio = Precio;
     }
 
-    public int getNumero_Serie() {
+    public double getNumero_Serie() {
         return Numero_Serie;
     }
 
-    public void setNumero_Serie(int Numero_Serie) {
+    public void setNumero_Serie(double Numero_Serie) {
         this.Numero_Serie = Numero_Serie;
     }
 
@@ -53,12 +53,12 @@ public class Carro {
         this.Fecha_Ensamblado = Fecha_Ensamblado;
     }
 
-    public Color getPintura() {
-        return Pintura;
+    public Color getPdoubleura() {
+        return color;
     }
 
-    public void setPintura(Color Pintura) {
-        this.Pintura = Pintura;
+    public void setPdoubleura(Color Pdoubleura) {
+        this.color = Pdoubleura;
     }
 
     public String getMarca_llanta() {
@@ -77,33 +77,33 @@ public class Carro {
         this.Polarizado = Polarizado;
     }
 
-    public int getVelocidad_Max() {
+    public double getVelocidad_Max() {
         return Velocidad_Max;
     }
 
-    public void setVelocidad_Max(int Velocidad_Max) {
+    public void setVelocidad_Max(double Velocidad_Max) {
         this.Velocidad_Max = Velocidad_Max;
     }
 
-    public int getGalones() {
+    public double getGalones() {
         return Galones;
     }
 
-    public void setGalones(int Galones) {
+    public void setGalones(double Galones) {
         this.Galones = Galones;
     }
 
-    public int getPrecio() {
+    public double getPrecio() {
         return Precio;
     }
 
-    public void setPrecio(int Precio) {
+    public void setPrecio(double Precio) {
         this.Precio = Precio;
     }
 
     @Override
     public String toString() {
-        return "Carro{" + "Numero_Serie=" + Numero_Serie + ", Fecha_Ensamblado=" + Fecha_Ensamblado + ", Pintura=" + Pintura + ", Marca_llanta=" + Marca_llanta + ", Polarizado=" + Polarizado + ", Velocidad_Max=" + Velocidad_Max + ", Galones=" + Galones + ", Precio=" + Precio + '}';
+        return "Carro{" + "Numero_Serie=" + Numero_Serie + ", Fecha_Ensamblado=" + Fecha_Ensamblado + ", Pdoubleura=" + color + ", Marca_llanta=" + Marca_llanta + ", Polarizado=" + Polarizado + ", Velocidad_Max=" + Velocidad_Max + ", Galones=" + Galones + ", Precio=" + Precio + '}';
     }
 
 }
